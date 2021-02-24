@@ -1,0 +1,6 @@
+employees = ("ram", "rahim", "akbar", "amar", "anthony")
+print(employees)
+print(employees[0])
+print(employees[0:3])
+print(employees[1:])
+print(employees * 3)
