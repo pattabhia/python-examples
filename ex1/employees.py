@@ -1,4 +1,4 @@
 employees = ["ram", "rahim", 'akbar', 'amar']
-print(employees)
-print(employees[0])
-print(employees[1:3])
+print("employees = ", employees)
+print("first employee = ", employees[0])
+print("employees substring = ",employees[1:3])
