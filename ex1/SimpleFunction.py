@@ -1,3 +1,4 @@
+
 def display(elements):
     for element in elements:
         print("element = ", element.upper())
