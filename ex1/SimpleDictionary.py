@@ -2,3 +2,5 @@ stateCapital = {'karnataka': 'bengaluru', 'telangana': 'hyderabad', 'maharashtra
                 'andhra pradesh': 'vijayawada'}
 print(stateCapital.keys())
 print(stateCapital.values())
+
+
