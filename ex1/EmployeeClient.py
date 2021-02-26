@@ -1,8 +1,14 @@
 from ex1.Employee import Employee
 
-employee1 = Employee("Ram", 1000)
 
-employee1.displayEmployee()
-employee1.displayCount()
+class EmployeeClient(Employee):
+
+    def __init__(self, o):
+        print("calling employee client...")
+
+    def displayEmployee(self):
+        print("calling from client ...")
 
 
+emp = Employee("ram", 10000)
+emp.displayEmployee()
