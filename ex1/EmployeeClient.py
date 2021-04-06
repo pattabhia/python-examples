@@ -1,4 +1,4 @@
-from ex1.Employee import Employee
+from Employee import Employee
 
 
 class EmployeeClient(Employee):
