@@ -1,3 +1,3 @@
-from ex1 import employees
+import employees
 
 employees.display_name("Ram")
