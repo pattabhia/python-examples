@@ -1,5 +1,6 @@
 from csv.reader import CSVReader
-from fileutils.fileutilities import FileUtils
+from fileutils.fileutilities import exists
+
 csvObject = CSVReader()
 csvObject.setFileName("test.txt")
-FileUtils.exists(csvObject.getFileName())
+exists(csvObject.getFileName())
