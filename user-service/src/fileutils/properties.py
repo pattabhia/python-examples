@@ -11,7 +11,7 @@ class AppProperties:
         self.__configs = Properties()
         self.init_properties()
 
-    def exists(self, file:str) -> None:
+    def exists(self, file: str) -> None:
         try:
             with open(file) as f:
                 print('file exists', f.name)
