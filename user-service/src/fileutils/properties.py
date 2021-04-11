@@ -1,9 +1,10 @@
+from typing import TextIO
+
 from jproperties import Properties
 from pathlib import Path
 
 
 class AppProperties:
-
     __configs = object()
 
     def __init__(self):
@@ -11,12 +12,14 @@ class AppProperties:
         self.__configs = Properties()
         self.init_properties()
 
-    def exists(file):
+    def exists(self, file):
         try:
+            f: TextIO
             with open(file) as f:
-                print('file exists')
+                print('file exists', f.name)
         except IOError:
             print('file not accessible')
+        return
 
     def init_properties(self):
         project_root = Path(__file__).parents[2]
@@ -26,6 +29,7 @@ class AppProperties:
                 self.get_config().load(config_file)
         except Exception as ex:
             print('prop file error', str(ex))
+        return
 
     def get_property(self, key):
         return self.get_config().get(key)
