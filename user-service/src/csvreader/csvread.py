@@ -3,8 +3,9 @@ import pandas
 class CSVReader:
     __filename = ""
 
-    def __init__(self):
+    def __init__(self, filepath):
         print("CSVReader = Inside Constructor")
+        self.__filename = filepath
 
     def get_filename(self):
         return self.__filename
