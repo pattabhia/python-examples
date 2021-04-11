@@ -1,7 +1,6 @@
-from typing import TextIO
+from pathlib import Path
 
 from jproperties import Properties
-from pathlib import Path
 
 
 class AppProperties:
@@ -12,9 +11,8 @@ class AppProperties:
         self.__configs = Properties()
         self.init_properties()
 
-    def exists(self, file):
+    def exists(self, file:str) -> None:
         try:
-            f: TextIO
             with open(file) as f:
                 print('file exists', f.name)
         except IOError:
