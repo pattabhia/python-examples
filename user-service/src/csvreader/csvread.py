@@ -1,5 +1,6 @@
 import pandas
 
+
 class CSVReader:
     __filename = ""
 
