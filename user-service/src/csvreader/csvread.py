@@ -1,4 +1,8 @@
+import pathlib
+
 import pandas
+from pathlib import *
+import os
 
 
 class CSVReader:
@@ -13,5 +17,9 @@ class CSVReader:
 
     def parse_csv_file(self):
         print(self.get_filename)
-        df = pandas.read_csv('../../resources/employee.csv')
-        print(df)
+        if "data" in str(self.get_filename):
+            fn = os.path.join(Path(__file__).parents[2], self.get_filename.data)
+            df = pandas.read_csv(fn)
+            print(df)
+        else:
+            print('incorrect path given for csv file')
