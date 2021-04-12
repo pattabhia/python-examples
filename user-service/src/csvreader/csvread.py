@@ -8,10 +8,10 @@ class CSVReader:
         print("CSVReader = Inside Constructor")
         self.__filename = filepath
 
-    def get_filename(self):
+    def get_filename(self) -> str:
         return self.__filename
 
-    def set_filename(self, filename):
+    def set_filename(self, filename: str):
         self.__filename = filename
 
     def parse_csv_file(self):

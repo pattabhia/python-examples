@@ -29,7 +29,7 @@ class AppProperties:
             print('prop file error', str(ex))
         return
 
-    def get_property(self, key):
+    def get_property(self, key) -> str:
         return self.get_config().get(key)
 
     def get_config(self):
