@@ -4,6 +4,7 @@ from jproperties import Properties
 
 
 class AppProperties:
+
     __configs = object()
 
     def __init__(self):
