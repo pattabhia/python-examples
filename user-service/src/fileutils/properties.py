@@ -4,7 +4,6 @@ from jproperties import Properties
 
 
 class AppProperties:
-
     __configs = object()
 
     def __init__(self):
@@ -20,6 +19,7 @@ class AppProperties:
             print('file not accessible')
         return
 
+    # TODO: add this feature to init script
     def init_properties(self):
         project_root = Path(__file__).parents[2]
         prop_file_path = project_root / 'resources/app-config.properties'
