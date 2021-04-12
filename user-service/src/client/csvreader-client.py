@@ -1,7 +1,7 @@
-import fileutils.properties
-import csvreader.csvread
+from fileutils.properties import *
+from csvreader.csvread import CSVReader
 
-propObj = fileutils.properties.AppProperties()
+propObj = AppProperties()
 filepath = propObj.get_property('csv.read.filepath')
-csvObject = csvreader.csvread.CSVReader(filepath)
+csvObject = CSVReader(filepath)
 csvObject.parse_csv_file()

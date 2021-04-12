@@ -1,5 +1,4 @@
 from pathlib import Path
-
 from jproperties import Properties
 
 
@@ -29,7 +28,7 @@ class BaseProperties:
             print('prop file error', str(ex))
         return
 
-    def get_property(self, key) -> str:
+    def get_property(self, key: str) -> str:
         return self.get_config().get(key)
 
     def get_config(self):
