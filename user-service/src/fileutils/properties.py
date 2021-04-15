@@ -1,6 +1,7 @@
 from fileutils import BaseProperties
 
 
+
 class AppProperties(BaseProperties):
 
     def __init__(self):
