@@ -7,6 +7,6 @@ class AppProperties(BaseProperties):
         super().__init__()
         print('AppProperties = Constructor')
 
-    @staticmethod
-    def get_property(key):
-        return BaseProperties().get_property(key)
+
+def get_property(key):
+    return BaseProperties().get_property(key)
